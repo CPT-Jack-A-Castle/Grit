@@ -24,7 +24,7 @@ stpexploit.py: error: the following arguments are required: --interface, --mac
 ```
 
 ```
-╰─➤  python3 rstpexploit.py                                                                                                                               2 ↵
+python3 rstpexploit.py                                                                                                                               2 ↵
 
   ▄████  ██▀███   ██▓▄▄▄█████▓
  ██▒ ▀█▒▓██ ▒ ██▒▓██▒▓  ██▒ ▓▒

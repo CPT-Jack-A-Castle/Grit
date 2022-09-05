@@ -2,7 +2,7 @@
 STP &amp; RSTP Root Hijacking Exploit
 
 ```
-python3 stpexploit.py       
+python3 stpexploit.py  --help     
 
   ▄████  ██▀███   ██▓▄▄▄█████▓
  ██▒ ▀█▒▓██ ▒ ██▒▓██▒▓  ██▒ ▓▒
@@ -20,11 +20,16 @@ For the classic version of Spanning Tree Protocol
 Author: Magama Bazarov, @in9uz, <in9uz@protonmail.com>
 
 usage: stpexploit.py [-h] --interface INTERFACE --mac EVILMAC
-stpexploit.py: error: the following arguments are required: --interface, --mac
+
+options:
+  -h, --help            show this help message and exit
+  --interface INTERFACE
+                        Choose the interface to attack
+  --mac EVILMAC         Specify your MAC
 ```
 
 ```
-python3 rstpexploit.py                                                                                                                               2 ↵
+python3 rstpexploit.py --help                                                                                                                          2 ↵
 
   ▄████  ██▀███   ██▓▄▄▄█████▓
  ██▒ ▀█▒▓██ ▒ ██▒▓██▒▓  ██▒ ▓▒
@@ -42,5 +47,9 @@ For Rapid Spanning Tree Protocol version
 Author: Magama Bazarov, @in9uz, <in9uz@protonmail.com>
 
 usage: rstpexploit.py [-h] --interface INTERFACE --mac EVILMAC
-rstpexploit.py: error: the following arguments are required: --interface, --mac
+
+options:
+  -h, --help            show this help message and exit
+  --interface INTERFACE
+  --mac EVILMAC
 ```

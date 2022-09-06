@@ -13,8 +13,8 @@ But don't forget that the BPDU GUARD system can stop you.
 
 Before performing the injection, you should first analyze what type of STP protocol is used. And based on this, to start further...
 By the way, nothing prevents an attack against the classic STP using an exploit for RSTP.
-If a mitm attack fails, feel free to experiment and try two versions of exploits at once (STP exploit for RSTP, RSTP exploit for STP)
-Also, after injection, some switches will generate TCN messages (Topology Change Notification)
+If a MITM attack fails, feel free to experiment and try two versions of exploits at once (STP exploit for RSTP, RSTP exploit for STP)
+Also, after injection, switch will generate TCN messages (Topology Change Notification)
 
 If there are any problems, write to "Issues"
 
@@ -91,7 +91,7 @@ options:
 ```
 
 ```
-python3 rstpexploit.py --help                                                                                                                          2 ↵
+python3 rstpexploit.py --help                                                                                                                          
 
   ▄████  ██▀███   ██▓▄▄▄█████▓
  ██▒ ▀█▒▓██ ▒ ██▒▓██▒▓  ██▒ ▓▒

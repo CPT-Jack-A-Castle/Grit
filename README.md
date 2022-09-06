@@ -25,7 +25,7 @@ sudo pip3 install -r requirements.txt
 ### 3.1 Enable Forwarding
 
 ```
-sudo sysctl -w net.ipv4.ip_forward
+sudo sysctl -w net.ipv4.ip_forward=1
 ```
 ### 3.2 Enable Conntrack (nf_conntrack_helper)
 ```

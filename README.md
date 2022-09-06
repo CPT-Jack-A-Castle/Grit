@@ -15,14 +15,20 @@ Depending on the power of your hardware. some host traffic will go through you, 
 
 ## 3. Attack
 
-### 3.1 Routing Management
-
-##### 3.1.1 Enable Forwarding:
+### 3.1 Enable Forwarding (Route Management)
 
 ```
 sysctl -w net.ipv4.ip_forward
 ```
-
+### 3.2 Enable Conntrack (nf_conntrack_helper)
+```
+modprobe nf_conntrack
+echo "1" > /proc/sys/net/netfilter/nf_conntrack_helper
+```
+### 3.3 Promisc mode on interface
+```
+ifconfig ethX promisc
+```
 ```
 python3 stpexploit.py  --help     
 

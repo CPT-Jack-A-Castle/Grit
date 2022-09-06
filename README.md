@@ -45,7 +45,7 @@ sudo ifconfig ethX promisc
 ```
 ### 3.4 NAT
 ```
-sudo iptables -t nat -A POSTROUTING -o ethX -j MASQUEADE
+sudo iptables -t nat -A POSTROUTING -o ethX -j MASQUERADE
 ```
 
 ### 3.5 Start of injection.

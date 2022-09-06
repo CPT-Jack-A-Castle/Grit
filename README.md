@@ -9,6 +9,20 @@ The basic principle of the tools is to generate an STP/RSTP frame with the lowes
 After that, an opportunity will open for a MITM attack, you will partially intercept traffic, not all of it. Keep that in mind.
 But don't forget that the BPDU GUARD system can stop you.
 
+## 2. Limitations
+
+Depending on the power of your hardware. some host traffic will go through you, you have to withstand this load, otherwise DoS will occur.
+
+## 3. Attack
+
+### 3.1 Routing Management
+
+##### 3.1.1 Enable Forwarding:
+
+```
+sysctl -w net.ipv4.ip_forward
+```
+
 ```
 python3 stpexploit.py  --help     
 

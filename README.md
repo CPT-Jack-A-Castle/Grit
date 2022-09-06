@@ -11,6 +11,13 @@ The basic principle of the tools is to generate an STP/RSTP frame with the lowes
 After that, an opportunity will open for a MITM attack, you will partially intercept traffic, not all of it. Keep that in mind.
 But don't forget that the BPDU GUARD system can stop you.
 
+Before performing the injection, you should first analyze what type of STP protocol is used. And based on this, to start further...
+By the way, nothing prevents an attack against the classic STP using an exploit for RSTP.
+If a mitm attack fails, feel free to experiment and try two versions of exploits at once (STP exploit for RSTP, RSTP exploit for STP)
+Also, after injection, some switches will generate TCN messages (Topology Change Notification)
+
+If there are any problems, write to "Issues"
+
 ## 2. Limitations
 
 Depending on the power of your hardware. some host traffic will go through you, you have to withstand this load, otherwise DoS will occur.

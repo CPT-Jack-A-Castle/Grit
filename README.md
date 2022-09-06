@@ -47,9 +47,11 @@ python3 stpexploit.py --interface ethX --mac XX:XX:XX:XX:XX:XX
 #### 3.5.2 RSTP
 ```
 python3 rstpexploit.py --interface ethX --mac XX:XX:XX:XX:XX:XX
+```
 
 
 ## 4. Help
+
 ```
 python3 stpexploit.py  --help     
 

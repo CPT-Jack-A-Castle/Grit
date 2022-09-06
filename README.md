@@ -14,6 +14,11 @@ But don't forget that the BPDU GUARD system can stop you.
 Depending on the power of your hardware. some host traffic will go through you, you have to withstand this load, otherwise DoS will occur.
 
 ## 3. Attack
+First you need to install the dependencies.
+
+```
+sudo pip3 install -r requirements.txt
+```
 
 ### 3.1 Enable Forwarding
 

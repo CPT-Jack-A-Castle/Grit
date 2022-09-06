@@ -48,6 +48,8 @@ python3 stpexploit.py --interface ethX --mac XX:XX:XX:XX:XX:XX
 ```
 python3 rstpexploit.py --interface ethX --mac XX:XX:XX:XX:XX:XX
 ```
+After executing the injection, you will intercept the role of the root switch. you can track generated STP ads in Wireshark or tcpdump :)
+
 
 
 ## 4. Help

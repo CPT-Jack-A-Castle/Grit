@@ -41,7 +41,7 @@ sudo echo "1" > /proc/sys/net/netfilter/nf_conntrack_helper
 ```
 ### 3.3 Promisc mode on interface
 ```
-sudo ifconfig ethX promisc
+sudo ip link set ethX promisc on
 ```
 ### 3.4 NAT
 ```

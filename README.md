@@ -79,7 +79,7 @@ python3 stpexploit.py  --help
 STP Root Hijacking Exploit
 For the classic version of Spanning Tree Protocol
 
-Author: Magama Bazarov, @in9uz, <in9uz@protonmail.com>
+Author: Caster, @c4s73r, <c4s73r@protonmail.com>
 
 usage: stpexploit.py [-h] --interface INTERFACE --mac EVILMAC
 
@@ -106,7 +106,7 @@ python3 rstpexploit.py --help
 RSTP Root Hijacking Exploit
 For Rapid Spanning Tree Protocol version
 
-Author: Magama Bazarov, @in9uz, <in9uz@protonmail.com>
+Author: Caster, @c4s73r, <c4s73r@protonmail.com>
 
 usage: rstpexploit.py [-h] --interface INTERFACE --mac EVILMAC
 

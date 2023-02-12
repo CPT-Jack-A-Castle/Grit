@@ -110,8 +110,10 @@ Author: Caster, @c4s73r, <c4s73r@protonmail.com>
 
 usage: rstpexploit.py [-h] --interface INTERFACE --mac EVILMAC
 
+
 options:
   -h, --help            show this help message and exit
   --interface INTERFACE
-  --mac EVILMAC
+                        Choose the interface to attack
+  --mac EVILMAC         Specify your MAC
 ```
